@@ -1,3 +1,3 @@
-## 1.0.0 (2021-09-08)
+## 1.0.0 (2021-09-24)
 
-- Project initialization.
+- Publish a new module
