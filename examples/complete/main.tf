@@ -19,11 +19,16 @@ module "vpc" {
   availability_zones = [data.alicloud_zones.default.zones.0.id]
 }
 
+resource "random_integer" "default" {
+  max = 99999
+  min = 10000
+}
+
 module "example" {
   source = "../.."
 
   #alicloud_ons_instance
-  name        = var.name
+  name        = "${var.name}-${random_integer.default.result}"
   description = var.description
 
   #alicloud_kvstore_instance
