@@ -21,7 +21,7 @@ variable "security_ips" {
 variable "redis_engine_version" {
   description = "The specification of the redis engine version."
   type        = string
-  default     = "4.0"
+  default     = "5.0"
 }
 
 variable "redis_appendonly" {
