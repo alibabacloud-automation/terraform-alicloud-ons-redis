@@ -60,8 +60,3 @@ variable "redis_instance_class" {
   default     = "redis.master.large.default"
 }
 
-variable "security_group_ids" {
-  description = "A list of security group ids to associate with."
-  type        = list(string)
-  default     = []
-}
